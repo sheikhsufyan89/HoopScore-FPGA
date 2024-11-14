@@ -1,0 +1,371 @@
+
+*** Running vivado
+    with args -log top_highest.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_highest.tcl
+
+
+
+****** Vivado v2020.1 (64-bit)
+  **** SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+  **** IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source top_highest.tcl -notrace
+Command: synth_design -top top_highest -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 23384
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 1027.812 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top_highest' [C:/Users/User/Desktop/integrated_project/stopwatch_complete/stopwatch_complete.srcs/sources_1/new/top_highest.v:3]
+	Parameter START_SCREEN_STATE bound to: 2'b00 
+	Parameter TOP_STATE bound to: 2'b01 
+	Parameter END_SCREEN_STATE bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'top_startscreen' [C:/Users/User/Desktop/integrated_project/stopwatch_complete/stopwatch_complete.srcs/sources_1/new/top_startscreen.v:1]
+INFO: [Synth 8-6157] synthesizing module 'vga_controller' [C:/Users/User/Desktop/integrated_project/stopwatch_complete/stopwatch_complete.srcs/sources_1/new/vga_controller.v:3]
+	Parameter HD bound to: 640 - type: integer 
+	Parameter HF bound to: 48 - type: integer 
+	Parameter HB bound to: 16 - type: integer 
+	Parameter HR bound to: 96 - type: integer 
+	Parameter HMAX bound to: 799 - type: integer 
+	Parameter VD bound to: 480 - type: integer 
+	Parameter VF bound to: 10 - type: integer 
+	Parameter VB bound to: 33 - type: integer 
+	Parameter VR bound to: 2 - type: integer 
+	Parameter VMAX bound to: 524 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'vga_controller' (1#1) [C:/Users/User/Desktop/integrated_project/stopwatch_complete/stopwatch_complete.srcs/sources_1/new/vga_controller.v:3]
+INFO: [Synth 8-6157] synthesizing module 'pixel_gen_startscreen' [C:/Users/User/Desktop/integrated_project/stopwatch_complete/stopwatch_complete.srcs/sources_1/new/pixel_gen_startscreen.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'pixel_gen_startscreen' (2#1) [C:/Users/User/Desktop/integrated_project/stopwatch_complete/stopwatch_complete.srcs/sources_1/new/pixel_gen_startscreen.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'top_startscreen' (3#1) [C:/Users/User/Desktop/integrated_project/stopwatch_complete/stopwatch_complete.srcs/sources_1/new/top_startscreen.v:1]
+WARNING: [Synth 8-689] width (12) of port connection 'hsync' does not match port width (1) of module 'top_startscreen' [C:/Users/User/Desktop/integrated_project/stopwatch_complete/stopwatch_complete.srcs/sources_1/new/top_highest.v:32]
+WARNING: [Synth 8-689] width (12) of port connection 'vsync' does not match port width (1) of module 'top_startscreen' [C:/Users/User/Desktop/integrated_project/stopwatch_complete/stopwatch_complete.srcs/sources_1/new/top_highest.v:33]
+INFO: [Synth 8-6157] synthesizing module 'top' [C:/Users/User/Desktop/integrated_project/stopwatch_complete/stopwatch_complete.srcs/sources_1/new/top.v:1]
+INFO: [Synth 8-6157] synthesizing module 'new_binary_clock' [C:/Users/User/Desktop/integrated_project/stopwatch_complete/stopwatch_complete.srcs/sources_1/new/new_binary_clock.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'new_binary_clock' (4#1) [C:/Users/User/Desktop/integrated_project/stopwatch_complete/stopwatch_complete.srcs/sources_1/new/new_binary_clock.v:3]
+INFO: [Synth 8-6157] synthesizing module 'ir_sensor_counter' [C:/Users/User/Desktop/integrated_project/stopwatch_complete/stopwatch_complete.srcs/sources_1/new/ir_sensor_counter.v:1]
+INFO: [Synth 8-6157] synthesizing module 'clk_div' [C:/Users/User/Desktop/integrated_project/stopwatch_complete/stopwatch_complete.srcs/sources_1/new/clk_div.v:3]
+	Parameter div_value bound to: 32'b00000000000011110100001001000000 
+INFO: [Synth 8-6155] done synthesizing module 'clk_div' (5#1) [C:/Users/User/Desktop/integrated_project/stopwatch_complete/stopwatch_complete.srcs/sources_1/new/clk_div.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'ir_sensor_counter' (6#1) [C:/Users/User/Desktop/integrated_project/stopwatch_complete/stopwatch_complete.srcs/sources_1/new/ir_sensor_counter.v:1]
+INFO: [Synth 8-6157] synthesizing module 'ir_sensor_counter2' [C:/Users/User/Desktop/integrated_project/stopwatch_complete/stopwatch_complete.srcs/sources_1/new/ir_sensor_counter2.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'ir_sensor_counter2' (7#1) [C:/Users/User/Desktop/integrated_project/stopwatch_complete/stopwatch_complete.srcs/sources_1/new/ir_sensor_counter2.v:1]
+INFO: [Synth 8-6157] synthesizing module 'pixel_clk_gen' [C:/Users/User/Desktop/integrated_project/stopwatch_complete/stopwatch_complete.srcs/sources_1/new/pixel_clk_gen.v:3]
+	Parameter COLON_X_L bound to: 320 - type: integer 
+	Parameter COLON_X_R bound to: 351 - type: integer 
+	Parameter COLON_Y_T bound to: 192 - type: integer 
+	Parameter COLON_Y_B bound to: 256 - type: integer 
+	Parameter M10_X_L bound to: 256 - type: integer 
+	Parameter M10_X_R bound to: 287 - type: integer 
+	Parameter M10_Y_T bound to: 192 - type: integer 
+	Parameter M10_Y_B bound to: 256 - type: integer 
+	Parameter M1_X_L bound to: 288 - type: integer 
+	Parameter M1_X_R bound to: 319 - type: integer 
+	Parameter M1_Y_T bound to: 192 - type: integer 
+	Parameter M1_Y_B bound to: 256 - type: integer 
+	Parameter S10_X_L bound to: 352 - type: integer 
+	Parameter S10_X_R bound to: 383 - type: integer 
+	Parameter S10_Y_T bound to: 192 - type: integer 
+	Parameter S10_Y_B bound to: 256 - type: integer 
+	Parameter S1_X_L bound to: 384 - type: integer 
+	Parameter S1_X_R bound to: 415 - type: integer 
+	Parameter S1_Y_T bound to: 192 - type: integer 
+	Parameter S1_Y_B bound to: 256 - type: integer 
+	Parameter C1_X_L bound to: 448 - type: integer 
+	Parameter C1_X_R bound to: 479 - type: integer 
+	Parameter C1_Y_T bound to: 192 - type: integer 
+	Parameter C1_Y_B bound to: 256 - type: integer 
+	Parameter C10_X_L bound to: 480 - type: integer 
+	Parameter C10_X_R bound to: 511 - type: integer 
+	Parameter C10_Y_T bound to: 192 - type: integer 
+	Parameter C10_Y_B bound to: 256 - type: integer 
+	Parameter Z1_X_L bound to: 160 - type: integer 
+	Parameter Z1_X_R bound to: 191 - type: integer 
+	Parameter Z1_Y_T bound to: 192 - type: integer 
+	Parameter Z1_Y_B bound to: 256 - type: integer 
+	Parameter Z10_X_L bound to: 192 - type: integer 
+	Parameter Z10_X_R bound to: 223 - type: integer 
+	Parameter Z10_Y_T bound to: 192 - type: integer 
+	Parameter Z10_Y_B bound to: 256 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'clock_digit_rom' [C:/Users/User/Desktop/integrated_project/stopwatch_complete/stopwatch_complete.srcs/sources_1/new/clock_digit_rom.v:3]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/User/Desktop/integrated_project/stopwatch_complete/stopwatch_complete.srcs/sources_1/new/clock_digit_rom.v:17]
+INFO: [Synth 8-6155] done synthesizing module 'clock_digit_rom' (8#1) [C:/Users/User/Desktop/integrated_project/stopwatch_complete/stopwatch_complete.srcs/sources_1/new/clock_digit_rom.v:3]
+WARNING: [Synth 8-6090] variable 'time_rgb' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/User/Desktop/integrated_project/stopwatch_complete/stopwatch_complete.srcs/sources_1/new/pixel_clk_gen.v:237]
+WARNING: [Synth 8-6090] variable 'time_rgb' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/User/Desktop/integrated_project/stopwatch_complete/stopwatch_complete.srcs/sources_1/new/pixel_clk_gen.v:288]
+INFO: [Synth 8-6155] done synthesizing module 'pixel_clk_gen' (9#1) [C:/Users/User/Desktop/integrated_project/stopwatch_complete/stopwatch_complete.srcs/sources_1/new/pixel_clk_gen.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'top' (10#1) [C:/Users/User/Desktop/integrated_project/stopwatch_complete/stopwatch_complete.srcs/sources_1/new/top.v:1]
+WARNING: [Synth 8-689] width (12) of port connection 'hsync' does not match port width (1) of module 'top' [C:/Users/User/Desktop/integrated_project/stopwatch_complete/stopwatch_complete.srcs/sources_1/new/top_highest.v:44]
+WARNING: [Synth 8-689] width (12) of port connection 'vsync' does not match port width (1) of module 'top' [C:/Users/User/Desktop/integrated_project/stopwatch_complete/stopwatch_complete.srcs/sources_1/new/top_highest.v:45]
+INFO: [Synth 8-6157] synthesizing module 'top_endscreen' [C:/Users/User/Desktop/integrated_project/stopwatch_complete/stopwatch_complete.srcs/sources_1/new/top_endscreen.v:1]
+INFO: [Synth 8-6157] synthesizing module 'pixel_endscreen' [C:/Users/User/Desktop/integrated_project/stopwatch_complete/stopwatch_complete.srcs/sources_1/new/pixel_endscreen.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'pixel_endscreen' (11#1) [C:/Users/User/Desktop/integrated_project/stopwatch_complete/stopwatch_complete.srcs/sources_1/new/pixel_endscreen.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'top_endscreen' (12#1) [C:/Users/User/Desktop/integrated_project/stopwatch_complete/stopwatch_complete.srcs/sources_1/new/top_endscreen.v:1]
+WARNING: [Synth 8-689] width (4) of port connection 'result' does not match port width (1) of module 'top_endscreen' [C:/Users/User/Desktop/integrated_project/stopwatch_complete/stopwatch_complete.srcs/sources_1/new/top_highest.v:59]
+WARNING: [Synth 8-689] width (12) of port connection 'hsync' does not match port width (1) of module 'top_endscreen' [C:/Users/User/Desktop/integrated_project/stopwatch_complete/stopwatch_complete.srcs/sources_1/new/top_highest.v:63]
+WARNING: [Synth 8-689] width (12) of port connection 'vsync' does not match port width (1) of module 'top_endscreen' [C:/Users/User/Desktop/integrated_project/stopwatch_complete/stopwatch_complete.srcs/sources_1/new/top_highest.v:64]
+INFO: [Synth 8-6155] done synthesizing module 'top_highest' (13#1) [C:/Users/User/Desktop/integrated_project/stopwatch_complete/stopwatch_complete.srcs/sources_1/new/top_highest.v:3]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:11 . Memory (MB): peak = 1027.812 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:13 . Memory (MB): peak = 1027.812 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:13 . Memory (MB): peak = 1027.812 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.050 . Memory (MB): peak = 1027.812 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/User/Desktop/integrated_project/stopwatch_complete/stopwatch_complete.srcs/constrs_1/new/const_vga_clock.xdc]
+Finished Parsing XDC File [C:/Users/User/Desktop/integrated_project/stopwatch_complete/stopwatch_complete.srcs/constrs_1/new/const_vga_clock.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/User/Desktop/integrated_project/stopwatch_complete/stopwatch_complete.srcs/constrs_1/new/const_vga_clock.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_highest_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_highest_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1045.582 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 1045.582 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:18 ; elapsed = 00:00:26 . Memory (MB): peak = 1045.582 ; gain = 17.770
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:18 ; elapsed = 00:00:26 . Memory (MB): peak = 1045.582 ; gain = 17.770
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:26 . Memory (MB): peak = 1045.582 ; gain = 17.770
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'top_highest'
+WARNING: [Synth 8-327] inferring latch for variable 'data_reg' [C:/Users/User/Desktop/integrated_project/stopwatch_complete/stopwatch_complete.srcs/sources_1/new/clock_digit_rom.v:19]
+WARNING: [Synth 8-327] inferring latch for variable 'bit_addr_reg' [C:/Users/User/Desktop/integrated_project/stopwatch_complete/stopwatch_complete.srcs/sources_1/new/pixel_clk_gen.v:176]
+WARNING: [Synth 8-327] inferring latch for variable 'row_addr_reg' [C:/Users/User/Desktop/integrated_project/stopwatch_complete/stopwatch_complete.srcs/sources_1/new/pixel_clk_gen.v:175]
+WARNING: [Synth 8-327] inferring latch for variable 'char_addr_reg' [C:/Users/User/Desktop/integrated_project/stopwatch_complete/stopwatch_complete.srcs/sources_1/new/pixel_clk_gen.v:174]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+      START_SCREEN_STATE |                               00 |                               00
+               TOP_STATE |                               01 |                               01
+        END_SCREEN_STATE |                               10 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'top_highest'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:20 ; elapsed = 00:00:28 . Memory (MB): peak = 1045.582 ; gain = 17.770
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 3     
+	   2 Input   10 Bit       Adders := 6     
+	   2 Input    7 Bit       Adders := 1     
+	   2 Input    6 Bit       Adders := 2     
+	   2 Input    4 Bit       Adders := 1     
+	   2 Input    2 Bit       Adders := 3     
++---Registers : 
+	               32 Bit    Registers := 3     
+	               12 Bit    Registers := 2     
+	               11 Bit    Registers := 1     
+	               10 Bit    Registers := 13    
+	                6 Bit    Registers := 2     
+	                4 Bit    Registers := 4     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 19    
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 3     
+	   2 Input   12 Bit        Muxes := 3     
+	  11 Input   12 Bit        Muxes := 1     
+	   3 Input   12 Bit        Muxes := 2     
+	   7 Input   12 Bit        Muxes := 1     
+	 177 Input    8 Bit        Muxes := 1     
+	   2 Input    7 Bit        Muxes := 1     
+	   2 Input    6 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 2     
+	   3 Input    2 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 4     
+	   2 Input    1 Bit        Muxes := 15    
+	   9 Input    1 Bit        Muxes := 1     
+	   3 Input    1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:32 ; elapsed = 00:00:45 . Memory (MB): peak = 1045.582 ; gain = 17.770
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping	Report
++--------------+----------------------+---------------+----------------+
+|Module Name   | RTL Object           | Depth x Width | Implemented As | 
++--------------+----------------------+---------------+----------------+
+|pixel_clk_gen | cdr/addr_reg_reg_rep | 256x8         | Block RAM      | 
++--------------+----------------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:43 ; elapsed = 00:00:59 . Memory (MB): peak = 1045.582 ; gain = 17.770
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:45 ; elapsed = 00:01:02 . Memory (MB): peak = 1058.625 ; gain = 30.812
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4765] Removing register instance (\top_inst/rgb_reg_reg[9]__0 ) from module (top_highest) as it is equivalent to (\top_inst/rgb_reg_reg[9] ) and driving same net [C:/Users/User/Desktop/integrated_project/stopwatch_complete/stopwatch_complete.srcs/sources_1/new/top.v:91]
+INFO: [Synth 8-4765] Removing register instance (\top_inst/rgb_reg_reg[5]__0 ) from module (top_highest) as it is equivalent to (\top_inst/rgb_reg_reg[5] ) and driving same net [C:/Users/User/Desktop/integrated_project/stopwatch_complete/stopwatch_complete.srcs/sources_1/new/top.v:91]
+INFO: [Synth 8-4765] Removing register instance (\top_inst/rgb_reg_reg[1]__0 ) from module (top_highest) as it is equivalent to (\top_inst/rgb_reg_reg[1] ) and driving same net [C:/Users/User/Desktop/integrated_project/stopwatch_complete/stopwatch_complete.srcs/sources_1/new/top.v:91]
+INFO: [Synth 8-4765] Removing register instance (\top_inst/rgb_reg_reg[11]__0 ) from module (top_highest) as it is equivalent to (\top_inst/rgb_reg_reg[11] ) and driving same net [C:/Users/User/Desktop/integrated_project/stopwatch_complete/stopwatch_complete.srcs/sources_1/new/top.v:91]
+INFO: [Synth 8-4765] Removing register instance (\top_inst/rgb_reg_reg[10]__0 ) from module (top_highest) as it is equivalent to (\top_inst/rgb_reg_reg[10] ) and driving same net [C:/Users/User/Desktop/integrated_project/stopwatch_complete/stopwatch_complete.srcs/sources_1/new/top.v:91]
+INFO: [Synth 8-4765] Removing register instance (\top_inst/rgb_reg_reg[8]__0 ) from module (top_highest) as it is equivalent to (\top_inst/rgb_reg_reg[8] ) and driving same net [C:/Users/User/Desktop/integrated_project/stopwatch_complete/stopwatch_complete.srcs/sources_1/new/top.v:91]
+INFO: [Synth 8-4765] Removing register instance (\top_inst/rgb_reg_reg[7]__0 ) from module (top_highest) as it is equivalent to (\top_inst/rgb_reg_reg[7] ) and driving same net [C:/Users/User/Desktop/integrated_project/stopwatch_complete/stopwatch_complete.srcs/sources_1/new/top.v:91]
+INFO: [Synth 8-4765] Removing register instance (\top_inst/rgb_reg_reg[6]__0 ) from module (top_highest) as it is equivalent to (\top_inst/rgb_reg_reg[6] ) and driving same net [C:/Users/User/Desktop/integrated_project/stopwatch_complete/stopwatch_complete.srcs/sources_1/new/top.v:91]
+INFO: [Synth 8-4765] Removing register instance (\top_inst/rgb_reg_reg[4]__0 ) from module (top_highest) as it is equivalent to (\top_inst/rgb_reg_reg[4] ) and driving same net [C:/Users/User/Desktop/integrated_project/stopwatch_complete/stopwatch_complete.srcs/sources_1/new/top.v:91]
+INFO: [Synth 8-4765] Removing register instance (\top_inst/rgb_reg_reg[3]__0 ) from module (top_highest) as it is equivalent to (\top_inst/rgb_reg_reg[3] ) and driving same net [C:/Users/User/Desktop/integrated_project/stopwatch_complete/stopwatch_complete.srcs/sources_1/new/top.v:91]
+INFO: [Synth 8-4765] Removing register instance (\top_inst/rgb_reg_reg[2]__0 ) from module (top_highest) as it is equivalent to (\top_inst/rgb_reg_reg[2] ) and driving same net [C:/Users/User/Desktop/integrated_project/stopwatch_complete/stopwatch_complete.srcs/sources_1/new/top.v:91]
+INFO: [Synth 8-4765] Removing register instance (\top_inst/rgb_reg_reg[0]__0 ) from module (top_highest) as it is equivalent to (\top_inst/rgb_reg_reg[0] ) and driving same net [C:/Users/User/Desktop/integrated_project/stopwatch_complete/stopwatch_complete.srcs/sources_1/new/top.v:91]
+INFO: [Synth 8-7052] The timing for the instance top_inst/pclk/cdr/addr_reg_reg_rep (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:46 ; elapsed = 00:01:03 . Memory (MB): peak = 1076.117 ; gain = 48.305
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:52 ; elapsed = 00:01:10 . Memory (MB): peak = 1080.824 ; gain = 53.012
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:52 ; elapsed = 00:01:10 . Memory (MB): peak = 1080.824 ; gain = 53.012
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:52 ; elapsed = 00:01:10 . Memory (MB): peak = 1080.824 ; gain = 53.012
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:52 ; elapsed = 00:01:11 . Memory (MB): peak = 1080.824 ; gain = 53.012
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:52 ; elapsed = 00:01:11 . Memory (MB): peak = 1080.824 ; gain = 53.012
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:52 ; elapsed = 00:01:11 . Memory (MB): peak = 1080.824 ; gain = 53.012
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     1|
+|2     |CARRY4   |    24|
+|3     |LUT1     |    10|
+|4     |LUT2     |    87|
+|5     |LUT3     |    81|
+|6     |LUT4     |    94|
+|7     |LUT5     |   143|
+|8     |LUT6     |   384|
+|9     |MUXF7    |     1|
+|10    |RAMB18E1 |     1|
+|11    |FDCE     |   103|
+|12    |FDPE     |     6|
+|13    |FDRE     |   175|
+|14    |FDSE     |     9|
+|15    |LD       |    18|
+|16    |IBUF     |     5|
+|17    |OBUF     |    14|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:52 ; elapsed = 00:01:11 . Memory (MB): peak = 1080.824 ; gain = 53.012
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 4 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:40 ; elapsed = 00:01:06 . Memory (MB): peak = 1080.824 ; gain = 35.242
+Synthesis Optimization Complete : Time (s): cpu = 00:00:52 ; elapsed = 00:01:11 . Memory (MB): peak = 1080.824 ; gain = 53.012
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.037 . Memory (MB): peak = 1092.867 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 44 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1092.867 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 18 instances were transformed.
+  LD => LDCE: 18 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+57 Infos, 13 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:01 ; elapsed = 00:01:26 . Memory (MB): peak = 1092.867 ; gain = 65.055
+INFO: [Common 17-1381] The checkpoint 'C:/Users/User/Desktop/integrated_project/stopwatch_complete/stopwatch_complete.runs/synth_1/top_highest.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_highest_utilization_synth.rpt -pb top_highest_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon May 13 11:03:33 2024...

@@ -1,0 +1,180 @@
+/*
+
+Xilinx Vivado v2020.1 (64-bit) [Major: 2020, Minor: 1]
+SW Build: 2902540 on Wed May 27 19:54:49 MDT 2020
+IP Build: 2902112 on Wed May 27 22:43:36 MDT 2020
+
+Process ID (PID): 18360
+License: Customer
+
+Current time: 	Wed May 08 22:03:50 PKT 2024
+Time zone: 	Pakistan Standard Time (Asia/Karachi)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 1920x1080
+Screen resolution (DPI): 125
+Available screens: 1
+Default font: family=Segoe UI,name=Segoe UI,style=plain,size=15
+
+Java version: 	9.0.4 64-bit
+Java home: 	D:/Zain/Vivado/2020.1/tps/win64/jre9.0.4
+Java executable location: 	D:/Zain/Vivado/2020.1/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	User
+User home directory: C:/Users/User
+User working directory: C:/Users/User/Desktop/integrated_project/stopwatch_complete
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: D:/Zain/Vivado
+HDI_APPROOT: D:/Zain/Vivado/2020.1
+RDI_DATADIR: D:/Zain/Vivado/2020.1/data
+RDI_BINDIR: D:/Zain/Vivado/2020.1/bin
+
+Vivado preferences file location: C:/Users/User/AppData/Roaming/Xilinx/Vivado/2020.1/vivado.xml
+Vivado preferences directory: C:/Users/User/AppData/Roaming/Xilinx/Vivado/2020.1/
+Vivado layouts directory: C:/Users/User/AppData/Roaming/Xilinx/Vivado/2020.1/data/layouts
+PlanAhead jar file location: 	D:/Zain/Vivado/2020.1/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/User/Desktop/integrated_project/stopwatch_complete/vivado.log
+Vivado journal file location: 	C:/Users/User/Desktop/integrated_project/stopwatch_complete/vivado.jou
+Engine tmp dir: 	C:/Users/User/Desktop/integrated_project/stopwatch_complete/.Xil/Vivado-18360-DESKTOP-11PM7OI
+
+Xilinx Environment Variables
+----------------------------
+XILINX: D:/Zain/Vivado/2020.1/ids_lite/ISE
+XILINX_DSP: D:/Zain/Vivado/2020.1/ids_lite/ISE
+XILINX_PLANAHEAD: D:/Zain/Vivado/2020.1
+XILINX_VIVADO: D:/Zain/Vivado/2020.1
+XILINX_VIVADO_HLS: D:/Zain/Vivado/2020.1
+
+
+GUI allocated memory:	154 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 826 MB
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// WARNING: HEventQueue.dispatchEvent() is taking  1098 ms.
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// bz (cs):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\User\Desktop\integrated_project\stopwatch_complete\stopwatch_complete.xpr. Version: Vivado v2020.1 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project C:/Users/User/Desktop/integrated_project/stopwatch_complete/stopwatch_complete.xpr 
+// HMemoryUtils.trashcanNow. Engine heap size: 826 MB. GUI used memory: 53 MB. Current time: 5/8/24, 10:03:51 PM PKT
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project C:/Users/User/Desktop/integrated_project/stopwatch_complete/stopwatch_complete.xpr 
+// Tcl Message: INFO: [Project 1-313] Project file moved from 'C:/Users/Sufyan/Desktop/stopwatch_complete' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 77 MB (+78426kb) [00:00:27]
+// [Engine Memory]: 826 MB (+714177kb) [00:00:27]
+// [GUI Memory]: 93 MB (+12705kb) [00:00:28]
+// [GUI Memory]: 106 MB (+8888kb) [00:00:31]
+// WARNING: HEventQueue.dispatchEvent() is taking  9227 ms.
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Zain/Vivado/2020.1/data/ip'. 
+// Tcl Message: open_project: Time (s): cpu = 00:00:21 ; elapsed = 00:00:15 . Memory (MB): peak = 1029.512 ; gain = 0.000 
+// Project name: stopwatch_complete; location: C:/Users/User/Desktop/integrated_project/stopwatch_complete; part: xc7a35tcpg236-1
+dismissDialog("Open Project"); // bz (cs)
+// Tcl Command: 'rdi::info_commands {device::*}'
+// Tcl Command: 'rdi::info_commands {debug::*}'
+// Tcl Command: 'rdi::info_commands {*}'
+// Tcl Message: update_compile_order -fileset sources_1 
+// [GUI Memory]: 127 MB (+16349kb) [00:00:42]
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Disabled Sources]", 2); // B (F, cs)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_highest (top_highest.v)]", 1); // B (F, cs)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_highest (top_highest.v), startscreen : top_startscreen (top_startscreen.v)]", 2); // B (F, cs)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_highest (top_highest.v), top_inst : top (top.v)]", 5); // B (F, cs)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_highest (top_highest.v), endscreen : top_endscreen (top_endscreen.v)]", 11); // B (F, cs)
+// PAPropertyPanels.initPanels (pixel_endscreen.v) elapsed time: 0.2s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_highest (top_highest.v), endscreen : top_endscreen (top_endscreen.v), pixel_gen_inst : pixel_endscreen (pixel_endscreen.v)]", 13, false); // B (F, cs)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_highest (top_highest.v), endscreen : top_endscreen (top_endscreen.v), pixel_gen_inst : pixel_endscreen (pixel_endscreen.v)]", 13, false, false, false, false, false, true); // B (F, cs) - Double Click
+// Elapsed time: 24 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_highest (top_highest.v), endscreen : top_endscreen (top_endscreen.v), vga : vga_controller (vga_controller.v)]", 12, false); // B (F, cs)
+// [GUI Memory]: 136 MB (+2808kb) [00:01:27]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_highest (top_highest.v), endscreen : top_endscreen (top_endscreen.v), vga : vga_controller (vga_controller.v)]", 12, false, false, false, false, false, true); // B (F, cs) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_highest (top_highest.v), endscreen : top_endscreen (top_endscreen.v), vga : vga_controller (vga_controller.v)]", 12, false); // B (F, cs)
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // F
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_highest (top_highest.v), top_inst : top (top.v), pclk : pixel_clk_gen (pixel_clk_gen.v)]", 10, true); // B (F, cs) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_highest (top_highest.v), top_inst : top (top.v), pclk : pixel_clk_gen (pixel_clk_gen.v)]", 10, true, false, false, false, false, true); // B (F, cs) - Double Click - Node
+// WARNING: HTimer (StateMonitor Timer) is taking 719ms to process. Increasing delay to 4000 ms.
+// Elapsed time: 25 seconds
+selectCodeEditor("pixel_clk_gen.v", 37, 49); // bP (w, cs)
+typeControlKey((HResource) null, "pixel_clk_gen.v", 'c'); // bP (w, cs)
+// Elapsed time: 21 seconds
+selectCodeEditor("pixel_clk_gen.v", 410, 249); // bP (w, cs)
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 225ms to process. Increasing delay to 2000 ms.
+// [GUI Memory]: 144 MB (+791kb) [00:28:43]
+// WARNING: HEventQueue.dispatchEvent() is taking  1642 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 826 MB. GUI used memory: 79 MB. Current time: 5/8/24, 10:33:55 PM PKT
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 1033 ms. Increasing delay to 3099 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 1575 ms. Increasing delay to 3000 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 826 MB. GUI used memory: 78 MB. Current time: 5/9/24, 12:02:52 AM PKT
+// WARNING: HEventQueue.dispatchEvent() is taking  1683 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  59996401 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4378 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1186 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 60002536 ms. Increasing delay to 4000 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 826 MB. GUI used memory: 69 MB. Current time: 5/9/24, 4:43:01 PM PKT
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking 791 ms to process. Increasing delay to 2000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1207 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  7097527 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 826 MB. GUI used memory: 69 MB. Current time: 5/9/24, 6:42:05 PM PKT
+// WARNING: HEventQueue.dispatchEvent() is taking  7271540 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3548 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 826 MB. GUI used memory: 70 MB. Current time: 5/9/24, 8:43:43 PM PKT
+// WARNING: HEventQueue.dispatchEvent() is taking  1429 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 826 MB. GUI used memory: 69 MB. Current time: 5/9/24, 9:13:42 PM PKT
+// WARNING: HEventQueue.dispatchEvent() is taking  1072 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1323 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2560 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1165 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3412999 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2188 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2065 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 826 MB. GUI used memory: 69 MB. Current time: 5/9/24, 10:21:38 PM PKT
+// WARNING: HEventQueue.dispatchEvent() is taking  26151 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1827 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 826 MB. GUI used memory: 69 MB. Current time: 5/9/24, 10:51:39 PM PKT
+// WARNING: HEventQueue.dispatchEvent() is taking  2155 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 2172 ms. Increasing delay to 6516 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 826 MB. GUI used memory: 70 MB. Current time: 5/9/24, 11:21:42 PM PKT
+// WARNING: HEventQueue.dispatchEvent() is taking  1073 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 826 MB. GUI used memory: 70 MB. Current time: 5/9/24, 11:51:44 PM PKT
+// WARNING: HEventQueue.dispatchEvent() is taking  50852 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 50745 ms. Increasing delay to 5000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  161495 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1121 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 826 MB. GUI used memory: 69 MB. Current time: 5/10/24, 12:21:47 AM PKT

@@ -1,0 +1,100 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
+| Date         : Mon May 13 11:04:43 2024
+| Host         : DESKTOP-11PM7OI running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file top_highest_control_sets_placed.rpt
+| Design       : top_highest
+| Device       : xc7a35t
+----------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    22 |
+|    Minimum number of control sets                        |    22 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    81 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    22 |
+| >= 0 to < 4        |     1 |
+| >= 4 to < 6        |     3 |
+| >= 6 to < 8        |     6 |
+| >= 8 to < 10       |     0 |
+| >= 10 to < 12      |     7 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |     5 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             103 |           48 |
+| No           | No                    | Yes                    |              44 |           18 |
+| No           | Yes                   | No                     |              79 |           24 |
+| Yes          | No                    | No                     |              20 |            9 |
+| Yes          | No                    | Yes                    |              65 |           27 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------------------------------+--------------------------------------------+-------------------------------------+------------------+----------------+--------------+
+|              Clock Signal              |                Enable Signal               |           Set/Reset Signal          | Slice Load Count | Bel Load Count | Bels / Slice |
++----------------------------------------+--------------------------------------------+-------------------------------------+------------------+----------------+--------------+
+|  top_inst/bin/r_1Hz_reg_n_0            |                                            | reset_IBUF                          |                1 |              1 |         1.00 |
+|  top_inst/ir2/nolabel_line11/CLK       | top_inst/ir2/counter_up                    | reset_IBUF                          |                1 |              4 |         4.00 |
+|  clk_100MHz_IBUF_BUFG                  |                                            | top_inst/vga/h_count_reg_reg[7]_0   |                3 |              4 |         1.33 |
+|  clk_100MHz_IBUF_BUFG                  |                                            | top_inst/vga/v_count_reg_reg[4]_0   |                3 |              5 |         1.67 |
+|  top_inst/bin/r_1Hz_reg_n_0            | top_inst/bin/minutes_ctr[5]_i_1_n_0        | reset_IBUF                          |                2 |              6 |         3.00 |
+|  top_inst/bin/r_1Hz_reg_n_0            | top_inst/bin/seconds_ctr[5]_i_1_n_0        | reset_IBUF                          |                3 |              6 |         2.00 |
+|  top_inst/ir/clk_div_inst/CLK          |                                            | reset_IBUF                          |                2 |              7 |         3.50 |
+|  top_inst/ir/clk_div_inst/CLK          | top_inst/ir/counter_up                     | reset_IBUF                          |                2 |              7 |         3.50 |
+|  top_inst/ir2/nolabel_line11/CLK       |                                            | reset_IBUF                          |                2 |              7 |         3.50 |
+|  top_inst/pclk/cdr/data_reg[7]_i_1_n_0 |                                            |                                     |                2 |              7 |         3.50 |
+|  top_inst/vga/p_tick                   |                                            | reset_IBUF                          |                4 |             10 |         2.50 |
+|  top_inst/vga/p_tick                   | top_inst/vga/v_count_next                  | reset_IBUF                          |                5 |             10 |         2.00 |
+|  endscreen/vga/w_25MHz                 |                                            |                                     |                6 |             10 |         1.67 |
+|  endscreen/vga/w_25MHz                 | endscreen/vga/v_count_next_1               |                                     |                4 |             10 |         2.50 |
+|  startscreen/vga/w_25MHz               |                                            |                                     |                6 |             10 |         1.67 |
+|  startscreen/vga/w_25MHz               | startscreen/vga/v_count_next[9]_i_1__1_n_0 |                                     |                5 |             10 |         2.00 |
+|  top_inst/vga/h_count_reg_reg[7]_1     |                                            |                                     |                5 |             11 |         2.20 |
+|  clk_100MHz_IBUF_BUFG                  |                                            | reset_IBUF                          |               11 |             27 |         2.45 |
+|  clk_100MHz_IBUF_BUFG                  |                                            | top_inst/ir/clk_div_inst/clk_div    |                8 |             31 |         3.88 |
+|  clk_100MHz_IBUF_BUFG                  |                                            | top_inst/ir2/nolabel_line11/clk_div |                8 |             31 |         3.88 |
+|  clk_100MHz_IBUF_BUFG                  | top_inst/bin/D[0]                          | reset_IBUF                          |               14 |             32 |         2.29 |
+|  clk_100MHz_IBUF_BUFG                  |                                            |                                     |               29 |             65 |         2.24 |
++----------------------------------------+--------------------------------------------+-------------------------------------+------------------+----------------+--------------+
+
+
